@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F6F5F3;
+}
+
+.background-container {
+    height: 100vh;
+}
+
+.background-container img {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.center-line {
+    border-left: 1.5px solid #c4c1b5;
+    top: 0;
+    left: 50%;
+    height: 100vh;
+    z-index: 300;
+    position: absolute;
+}
+
+.description {
+    left: 50%;
+    top: 0;
+    position: absolute;
+    margin: 5%;
+}
+
+.description h1 {
+    color: #968f73;
+    font-size: 4vw;
+    text-align: center;
+    font-family: 'Josefin Slab';
+    padding-top: 5%;
+}
+
+.description p,
+li {
+    color: #746b47;
+    font-size: 1.5vw;
+    font-family: 'Josefin Slab';
+}
+
+
+.button {
+    background-color: #c79661;
+    border: 2px solid #c79661;
+    color: white;
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+}
+
+.button:hover{
+    background-color: #aaa28200;
+    border: 2px solid #c79661;
+}
+
+#louvre{
+    top: 61vh;
+    left: 2.1vw;
+}
+
+#nyu{
+    top: 72vh;
+    left: 28.4vw;
+}
+
+#manarat{
+    top: 55vh;
+    left: 16.3vw;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Manarat Al Saadiyat </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <img src="/images/back.png" alt="back button" id="back-button" onclick="goHome()">
+    <div class="works">
+        <div class="artwork" id="vaadaka" onclick="display(this.id)"> VAADAKA</div>
+        <div class="artwork" id="fwalat" onclick="display(this.id)"> FWALAT AL ASER </div>
+        <div class="artwork" id="past-voices" onclick="display(this.id)"> PAST VOICES </div>
+        <div class="artwork" id="dish" onclick="display(this.id)"> DISH</div>
+        <div class="artwork" id="outside-in" onclick="display(this.id)"> OUTSIDE IN</div>
+        <div class="artwork" id="volcano" onclick="display(this.id)"> AL-BURKAN</div>
+        <div class="artwork" id="hauntology" onclick="display(this.id)"> OF HOPE, HOME, AND HAUNTOLOGY </div>
+        <div class="artwork" id="boy" onclick="display(this.id)"> THE 90S KID</div>
+        <div class="artwork" id="girl" onclick="display(this.id)"> THE 90S KID</div>
+    </div>
+    <div id="overlay">
+        <div id="card">
+            <img id="art-image" onmouseover="playAudio(this.className)" onmouseout="stopAudio(this.className)">
+            <p id="close" onclick="back()">x</p>
+            <p id="instructions"> Hover over the image to play audio!</p>
+        </div>
+    </div>
+</body>
+
+</html>
