@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+/*
+    background-image: url(images/Back.jpg);
+    background-size: cover;
+*/
+    font-size: 2vw;
+    color: #938a6a;
+    font-family: "Bebas Neue";
+}
+
+.background-container {
+    height: 100vh;
+}
+
+.background-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+#back-image{
+    height: 100vh;
+
+}
+
+#back-button{
+    position: absolute;
+    height: 5vh;
+    top: 1vh;
+    left: 1vw;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.button {
+    background-color: bisque;
+    border: 3px solid bisque;
+    color: white;
+    padding: 0.75vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+}
+
+.button:hover{
+    background-color: #aaa28200;
+    border: 2px solid bisque;
+    padding: 3vw;
+
+}
+
+#axe{
+
+    top: 35vh;
+    left: 40vw;
+    background-image: url(images/axe.JPG);
+    background-size: cover;
+    
+}
+
+#dagger{
+
+    top: 35vh;
+    left: 42vw;
+    background-image: url(images/dagger.jpg);
+    background-size: cover;
+    
+}
+
+#pots{
+    top: 32vh;
+    left: 55vw;
+    background-image: url(images/cooking_pots.jpg);
+    background-size: cover;
+}
+
+#stones{
+    top: 45vh;
+    left: 30vw;
+    background-image: url(images/stones.jpg);
+    background-size: cover;
+}
+
+

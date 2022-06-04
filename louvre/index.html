@@ -6,10 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Louvre Abu Dhabi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-
 <body>
-    entered louvre
+    
+    <div>
+        <img src="/images/back.png" alt="back button" id="back-button" onclick="goHome()">
+    </div>
+    
+    <div class="background-container">
+        <img src="/louvre/images/Back.jpg" alt="map">
+    
+        <div class="buttons">
+            <button class="button" id="axe" onclick="enterLouvre()"></button>
+            <button class="button" id="dagger" onclick="enterLouvre()"></button>
+
+            <button class="button" id="pots" onclick="enterNYU()"></button>
+
+            <button class="button" id="stones" onclick="enterManarat()"></button>
+        </div>
+
+    </div>
+    
 </body>
 
 </html>
