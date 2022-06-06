@@ -1,5 +1,5 @@
 let slideIndex = 1;
-let paths = ['/nyu/images/vid2.mp4', '/nyu/images/vid3.mp4', '/nyu/images/vid4.mp4', '/nyu/images/vid6.mp4'];
+let paths = ['/nyu/images/vid1.mp4', '/nyu/images/vid2.mp4', '/nyu/images/vid3.mp4', '/nyu/images/vid4.mp4', '/nyu/images/vid5.mp4', '/nyu/images/vid6.mp4', '/nyu/images/vid7.mp4', '/nyu/images/vid8.mp4'];
 
 
 window.addEventListener("load", () => {
