@@ -1,9 +1,9 @@
-let overlay;
+// let overlay;
 
-window.addEventListener("load", () => {
-    overlay = document.getElementById("overlay");
-    overlay.style.display = "none";
-})
+// window.addEventListener("load", () => {
+//     overlay = document.getElementById("overlay");
+//     overlay.style.display = "none";
+// })
 
 function goHome(){
     window.location = '/index.html';
