@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title> New York University Abu Dhabi</title>
 </head>
 
@@ -16,25 +16,19 @@
 
     <div id="overlay"></div>
 
-    <div class="carousel">
-        <div class="slideshow-container">
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+    <div class="main">
+        <div class="section" id="videos" onclick="viewVideos();"> videos</div>
+        <div class="section" id="images"> images </div>
+        <div class="section" id="audios"> audios</div>
+    </div>
 
+    <div class="videos">
+        <div class="slideshow-container">
+            <a class="prev" onclick="changeSlide(-1)">❮</a>
+            <a class="next" onclick="changeSlide(1)">❯</a>
         </div>
         <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-        </div>
-
+        <div class="dots" style="text-align:center"></div>
     </div>
 
 </body>

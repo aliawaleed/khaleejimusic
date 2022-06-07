@@ -10,10 +10,13 @@ body {
     font-family: "Bebas Neue";
 }
 
-/* .background-container {
-    height: 100vh;
-    width: 100vw;
-} */
+.background-container {
+    height: 80vh;
+    width: 70vw;
+    top: 10vh;
+    left: 15vw;
+    position: absolute;
+}
 
 #back-button{
     position: absolute;
@@ -25,7 +28,7 @@ body {
 
 .artwork {
     position: absolute;
-    background-color: #C9DDE4;
+    background-color: #ffffff00;
     /* border-radius: 5%; */
     cursor: pointer;
     box-sizing: border-box;
@@ -33,77 +36,89 @@ body {
     text-align: center;
 }
 
+.artwork:hover {
+    background-color: #cce4ea;
+}
+
 #vaadaka {
     width: 20vw;
-    height: 45vh;
-    left: 15vw;
-    top: 5vh;
-    padding-top: 10%;
+    height: 15.4vh;
+    left: 15.1vw;
+    top: 10.2vh;
+    padding-top: 2.5%;
+}
+
+#vaadakaTwo {
+    width: 20vw;
+    height: 17.7vh;
+    left: 15.1vw;
+    top: 26.6vh;
+    padding-top: 3.7%;
 }
 
 #fwalat {
-    left: 15vw;
+    left: 15.2vw;
     width: 20vw;
-    height: 20vh;
-    top: 55vh;
-    padding-top: 4%;
+    height: 16.4vh;
+    top: 51.3vh;
+    padding-top: 3%;
 }
 
 #past-voices {
-    left: 15vw;
-    width: 25vw;
-    height: 15vh;
-    top: 80vh;
+    left: 15.1vw;
+    width: 20vw;
+    height: 16.6vh;
+    top: 73.2vh;
     padding-top: 3%;
 }
 
 #dish {
-    left: 40vw;
-    width: 20vw;
-    height: 20vh;
-    top: 5vh;
-    padding-top: 4%;
+    left: 38.9vw;
+    width: 22vw;
+    height: 16.5vh;
+    top: 10.2vh;
+    padding-top: 3%;
 }
 
 #outside-in {
-    left: 40vw;
-    width: 20vw;
-    height: 20vh;
-    top: 30vh;
-    padding-top: 4%;
+    left: 38.9vw;
+    width: 22vw;
+    height: 16.5vh;
+    top: 32.5vh;
+    padding-top: 3%;
 }
 
 #volcano {
-    left: 44vw;
-    width: 15vw;
-    height: 27vh;
-    top: 55vh;
+    left: 38.9vw;
+    width: 22.2vw;
+    height: 36vh;
+    top: 53.8vh;
     border-radius: 50%;
-    padding-top: 5.5%;
+    padding-top: 8%;
 }
 
 #hauntology {
-    width: 20vw;
-    height: 45vh;
-    right: 15vw;
-    top: 5vh;
-    padding-top: 9%;
+    width: 19.7vw;
+    height: 36.3vh;
+    right: 15.3vw;
+    top: 10.2vh;
+    padding-top: 8%;
 }
 
 #boy {
-    width: 15vw;
-    height: 15vh;
-    right: 15vw;
-    top: 55vh;
-    padding-top: 2%;
+    width: 20vw;
+    height: 16.4vh;
+    right: 15.1vw;
+    top: 51.3vh;
+    padding-top: 3%;
 }
 
 #girl {
-    width: 15vw;
-    height: 15vh;
-    right: 15vw;
-    top: 80vh;
-    padding-top: 2%;
+    width: 20vw;
+    height: 16.4vh;
+    right: 15.1vw;
+    top: 73.3vh;
+    padding-top: 3%;
 }
 
 #overlay {
