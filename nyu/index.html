@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <img src="/images/back.png" alt="back button" id="back-button" onclick="goHome()">
+    <img src="/images/back.png" alt="back button" class="back" id="back-button" onclick="goHome()">
     <img src="/nyu/images/nyu.jpeg" class="background-container">
 
     <div id="overlay"></div>
@@ -19,8 +19,10 @@
     <div class="main">
         <div class="section" id="videos" onclick="viewVideos();"> videos</div>
         <div class="section" id="images"> images </div>
-        <div class="section" id="audios"> audios</div>
+        <div class="section" id="audios" onclick="viewAudios();"> audios</div>
     </div>
+
+    <img src="/images/back.png" alt="back button" class="back" id="back-categories" onclick="backToMain()">
 
     <div class="videos">
         <div class="slideshow-container">
@@ -29,6 +31,10 @@
         </div>
         <br>
         <div class="dots" style="text-align:center"></div>
+    </div>
+
+    <div class="audios">
+        <div class="audios-container"> </div>
     </div>
 
 </body>

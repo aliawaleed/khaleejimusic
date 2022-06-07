@@ -40,7 +40,7 @@ body {
     background-color: #cce4ea;
 }
 
-#vaadaka {
+#vaadakaTwo {
     width: 20vw;
     height: 15.4vh;
     left: 15.1vw;
@@ -48,9 +48,9 @@ body {
     padding-top: 2.5%;
 }
 
-#vaadakaTwo {
+#vaadaka {
     width: 20vw;
-    height: 17.7vh;
+    height: 17.8vh;
     left: 15.1vw;
     top: 26.6vh;
     padding-top: 3.7%;
@@ -60,7 +60,7 @@ body {
     left: 15.2vw;
     width: 20vw;
     height: 16.4vh;
-    top: 51.3vh;
+    top: 51.2vh;
     padding-top: 3%;
 }
 
@@ -75,7 +75,7 @@ body {
 #dish {
     left: 38.9vw;
     width: 22vw;
-    height: 16.5vh;
+    height: 16.4vh;
     top: 10.2vh;
     padding-top: 3%;
 }
@@ -83,7 +83,7 @@ body {
 #outside-in {
     left: 38.9vw;
     width: 22vw;
-    height: 16.5vh;
+    height: 16.4vh;
     top: 32.5vh;
     padding-top: 3%;
 }
@@ -126,6 +126,7 @@ body {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
+    display: none;
 }
 
 #card{

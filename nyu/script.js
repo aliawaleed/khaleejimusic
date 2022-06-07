@@ -1,19 +1,28 @@
 let slideIndex = 1;
-let paths = ['/nyu/images/vid1.mp4', '/nyu/images/vid2.mp4', '/nyu/images/vid3.mp4', '/nyu/images/vid4.mp4', '/nyu/images/vid5.mp4', '/nyu/images/vid6.mp4', '/nyu/images/vid7.mp4', '/nyu/images/vid8.mp4', '/nyu/images/vid9.mp4', '/nyu/images/vid10.mp4', '/nyu/images/vid11.mp4', '/nyu/images/vid12.mp4', '/nyu/images/vid13.mp4', '/nyu/images/vid14.mp4', '/nyu/images/vid15.mp4', '/nyu/images/vid16.mp4', '/nyu/images/vid17.mp4', '/nyu/images/vid18.mp4'];
-
+let videos;
+let audios;
+let backMain;
+let main;
+let back;
+let videoPaths = ['/nyu/videos/vid1.mp4', '/nyu/videos/vid2.mp4', '/nyu/videos/vid3.mp4', '/nyu/videos/vid4.mp4', '/nyu/videos/vid5.mp4', '/nyu/videos/vid6.mp4', '/nyu/videos/vid7.mp4', '/nyu/videos/vid8.mp4', '/nyu/videos/vid9.mp4', '/nyu/videos/vid10.mp4', '/nyu/videos/vid11.mp4', '/nyu/videos/vid12.mp4', '/nyu/videos/vid13.mp4', '/nyu/videos/vid14.mp4', '/nyu/videos/vid15.mp4', '/nyu/videos/vid16.mp4', '/nyu/videos/vid17.mp4', '/nyu/videos/vid18.mp4'];
+let audioPaths = ['/nyu/audios/claps.wav', '/nyu/audios/cling.wav', '/nyu/audios/conclusion.wav','/nyu/audios/discussion.wav', '/nyu/audios/playing.wav', '/nyu/audios/playingAgain.wav', '/nyu/audios/tightening.wav', '/nyu/audios/workshop.wav'];
 
 window.addEventListener("load", () => {
-    let videos = document.getElementsByClassName('videos')[0];
+    main = document.getElementsByClassName('main')[0];
+    back = document.getElementById('back-button');
+    backMain = document.getElementById('back-categories');
+    backMain.style.display = "none";
+    videos = document.getElementsByClassName('videos')[0];
     videos.style.display = "none";
     let container = document.getElementsByClassName('slideshow-container')[0];
-    for (let i = 0; i < paths.length; i++) {
+    for (let i = 0; i < videoPaths.length; i++) {
         let createSlide = document.createElement('div');
         createSlide.classList.add('mySlides');
         createSlide.classList.add('fade');
         container.appendChild(createSlide);
         let video = document.createElement('video');
         let source = document.createElement('source');
-        source.src = paths[i];
+        source.src = videoPaths[i];
         source.type = 'video/mp4';
         video.setAttribute("controls", "controls")
         video.appendChild(source);
@@ -26,20 +35,48 @@ window.addEventListener("load", () => {
 
     let dots = document.getElementsByClassName('dots')[0];
     console.log(dots)
-    for (let i = 0; i < paths.length; i++) {
+    for (let i = 0; i < videoPaths.length; i++) {
         let newDot = document.createElement('span');
         newDot.classList.add('dot');
         newDot.onclick = function () { currentSlide(i + 1) };
         dots.appendChild(newDot);
     }
     showSlides(slideIndex);
+
+
+    audios = document.getElementsByClassName('audios')[0];
+    audios.style.display = "none";
+    let audiosContainer = document.getElementsByClassName('audios-container')[0];
+    for (let i = 0; i < audioPaths.length; i++) {
+        let audio = document.createElement('audio');
+        let source = document.createElement('source');
+        source.src = audioPaths[i];
+        audio.appendChild(source);
+        audio.setAttribute("controls", "controls")
+        audiosContainer.appendChild(audio);
+    }
 })
 
 function viewVideos() {
-    let videos = document.getElementsByClassName('videos')[0];
     videos.style.display = "block";
-    let main = document.getElementsByClassName('main')[0];
     main.style.display = "none";
+    back.style.display = "none";
+    backMain.style.display = "block";
+}
+
+function viewAudios() {
+    audios.style.display = "block";
+    main.style.display = "none";
+    back.style.display = "none";
+    backMain.style.display = "block";
+}
+
+function backToMain() {
+    videos.style.display = "none";
+    audios.style.display = "none";
+    main.style.display = "block";
+    back.style.display = "block";
+    backMain.style.display = "none";
 }
 
 

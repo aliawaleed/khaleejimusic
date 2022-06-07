@@ -43,7 +43,7 @@ video {
   left: 70vw;
 }
 
-#back-button {
+.back {
   position: absolute;
   height: 5vh;
   top: 1vh;
@@ -52,7 +52,7 @@ video {
   z-index: 3;
 }
 
-.videos {
+.videos, .audios {
   top: 15%;
   left: 20%;
   z-index: 1;

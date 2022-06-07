@@ -2,7 +2,6 @@ let overlay;
 
 window.addEventListener("load", () => {
     overlay = document.getElementById("overlay");
-    overlay.style.display = "none";
 })
 
 function goHome(){
