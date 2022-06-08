@@ -1,10 +1,12 @@
 let slideIndex = 1;
 let videos;
+let images;
 let audios;
 let backMain;
 let main;
 let back;
 let videoPaths = ['/nyu/videos/vid1.mp4', '/nyu/videos/vid2.mp4', '/nyu/videos/vid3.mp4', '/nyu/videos/vid4.mp4', '/nyu/videos/vid5.mp4', '/nyu/videos/vid6.mp4', '/nyu/videos/vid7.mp4', '/nyu/videos/vid8.mp4', '/nyu/videos/vid9.mp4', '/nyu/videos/vid10.mp4', '/nyu/videos/vid11.mp4', '/nyu/videos/vid12.mp4', '/nyu/videos/vid13.mp4', '/nyu/videos/vid14.mp4', '/nyu/videos/vid15.mp4', '/nyu/videos/vid16.mp4', '/nyu/videos/vid17.mp4', '/nyu/videos/vid18.mp4'];
+let imagePaths = ['/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png'];
 let audioPaths = ['/nyu/audios/claps.wav', '/nyu/audios/cling.wav', '/nyu/audios/conclusion.wav','/nyu/audios/discussion.wav', '/nyu/audios/playing.wav', '/nyu/audios/playingAgain.wav', '/nyu/audios/tightening.wav', '/nyu/audios/workshop.wav'];
 
 window.addEventListener("load", () => {
@@ -14,6 +16,8 @@ window.addEventListener("load", () => {
     backMain.style.display = "none";
     videos = document.getElementsByClassName('videos')[0];
     videos.style.display = "none";
+    images = document.getElementsByClassName('images')[0];
+    images.style.display = "none";
     let container = document.getElementsByClassName('slideshow-container')[0];
     for (let i = 0; i < videoPaths.length; i++) {
         let createSlide = document.createElement('div');
@@ -43,6 +47,24 @@ window.addEventListener("load", () => {
     }
     showSlides(slideIndex);
 
+    images = document.getElementsByClassName('images')[0];
+    images.style.display = "none";
+    let imagesContainer = document.getElementsByClassName('images-container')[0];
+    for (let i = 0; i < imagePaths.length; i++) {
+        let responsiveness = document.createElement('div');
+        responsiveness.classList.add('responsive');
+        let imagesGallery = document.createElement('div');
+        imagesGallery.classList.add('gallery');
+        let image = document.createElement('img');
+        image.src = imagePaths[i];
+        image.classList.add('images-gallery');
+        imagesGallery.appendChild(image);
+        let text = document.createElement('div');
+        text.classList.add('desc');
+        imagesGallery.appendChild(text);
+        responsiveness.appendChild(imagesGallery);
+        imagesContainer.appendChild(responsiveness);
+    }
 
     audios = document.getElementsByClassName('audios')[0];
     audios.style.display = "none";
@@ -64,6 +86,13 @@ function viewVideos() {
     backMain.style.display = "block";
 }
 
+function viewImages() {
+    images.style.display = "block";
+    main.style.display = "none";
+    back.style.display = "none";
+    backMain.style.display = "block";
+}
+
 function viewAudios() {
     audios.style.display = "block";
     main.style.display = "none";
@@ -74,6 +103,7 @@ function viewAudios() {
 function backToMain() {
     videos.style.display = "none";
     audios.style.display = "none";
+    images.style.display = "none";
     main.style.display = "block";
     back.style.display = "block";
     backMain.style.display = "none";
