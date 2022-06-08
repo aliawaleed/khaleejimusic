@@ -19,7 +19,7 @@ video {
 #overlay {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(246, 245, 243, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
 }
@@ -172,12 +172,15 @@ div.gallery {
 
 div.gallery img {
   width: 100%;
+  height: 27vh;
+  padding: 4%;
+  background-color: rgba(255, 247, 220);
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.774);
+  background-color: rgba(255, 247, 220);
   font-family: 'nyt-cheltenham';
   font-size: 18px;
   color: white;
