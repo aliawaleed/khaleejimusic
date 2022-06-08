@@ -36,8 +36,7 @@ video {
 }
 
 .section:hover {
-  width: 22vw;
-  height: 42vh;
+  transform: scale(1.1);
 }
 
 #videos {
@@ -215,8 +214,9 @@ div.desc {
 .images {
   top: 10vh;
   position: absolute;
-  width: 100vw;
+  width: 90vw;
   height: 90vh;
+  left: 6vw;
 }
 
 .icons {
@@ -225,4 +225,8 @@ div.desc {
   margin-right: auto;
   padding-top: 30%;
   width: 40%;
+}
+
+.audios{
+  left: 10vw;
 }

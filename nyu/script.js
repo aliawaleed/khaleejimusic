@@ -8,6 +8,7 @@ let back;
 let videoPaths = ['/nyu/videos/vid1.mp4', '/nyu/videos/vid2.mp4', '/nyu/videos/vid3.mp4', '/nyu/videos/vid4.mp4', '/nyu/videos/vid5.mp4', '/nyu/videos/vid6.mp4', '/nyu/videos/vid7.mp4', '/nyu/videos/vid8.mp4', '/nyu/videos/vid9.mp4', '/nyu/videos/vid10.mp4', '/nyu/videos/vid11.mp4', '/nyu/videos/vid12.mp4', '/nyu/videos/vid13.mp4', '/nyu/videos/vid14.mp4', '/nyu/videos/vid15.mp4', '/nyu/videos/vid16.mp4', '/nyu/videos/vid17.mp4', '/nyu/videos/vid18.mp4'];
 let imagePaths = ['/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image1.png', '/nyu/images/image2.png'];
 let audioPaths = ['/nyu/audios/claps.wav', '/nyu/audios/cling.wav', '/nyu/audios/conclusion.wav','/nyu/audios/discussion.wav', '/nyu/audios/playing.wav', '/nyu/audios/playingAgain.wav', '/nyu/audios/tightening.wav', '/nyu/audios/workshop.wav'];
+let audioDescriptions = ["Introducing claps to the rhythm", "Using the hawan for the first time", "How to conclude", "Discussion", "Playing the Mukhalaf rhythm", "Singing along with the Hasawi rhythm", "Response on how often the merwas is tightened", "Introducing the workshop"];
 
 window.addEventListener("load", () => {
     main = document.getElementsByClassName('main')[0];
@@ -76,6 +77,10 @@ window.addEventListener("load", () => {
         audio.appendChild(source);
         audio.setAttribute("controls", "controls")
         audiosContainer.appendChild(audio);
+        let descriptions = document.createElement('p');
+        descriptions.textContent = audioDescriptions[i];
+        descriptions.classList.add('audioDesc');
+        audiosContainer.appendChild(descriptions);
     }
 })
 
