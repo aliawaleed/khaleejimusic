@@ -80,6 +80,42 @@ img {
     margin:auto;
 }
 
+#posts{
+
+    top: 46vh;
+    left: 15vw;
+    background-image: url(images/posts.jpg);
+    background-size: cover;
+    
+}
+
+#feather{
+
+    top: 50vh;
+    left: 55vw;
+    background-image: url(images/feather.jpg);
+    background-size: cover;
+    
+}
+
+#horse{
+
+    top: 40vh;
+    left: 50vw;
+    background-image: url(images/horse.JPG);
+    background-size: cover;
+    
+}
+
+
+#stars{
+
+    top: 45vh;
+    left: 70vw;
+    background-image: url(images/stars.jpg);
+    background-size: cover;
+    
+}
 
 #axe{
 
@@ -92,8 +128,8 @@ img {
 
 #bottles{
 
-    top: 50vh;
-    left: 41vw;
+    top: 47vh;
+    left: 42vw;
     background-image: url(images/bottles.jpg);
     background-size: cover;
     
