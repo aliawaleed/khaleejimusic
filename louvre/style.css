@@ -60,6 +60,7 @@ body {
     border: 1px solid bisque;
 /*    padding: 3vw;*/
     transform: scale(10);
+    z-index: 11;
 
 }
 
