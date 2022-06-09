@@ -113,7 +113,6 @@ function backToMain() {
     backMain.style.display = "none";
 }
 
-
 function changeSlide(n) {
     let pause = document.getElementsByClassName("vids")[slideIndex - 1];
     pause.pause();

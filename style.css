@@ -16,6 +16,11 @@ body {
     height: 100%;
     position: absolute;
     z-index: 1;
+    filter: grayscale(100%);
+}
+
+.background-container img:hover {
+    filter: none;
 }
 
 .about {
@@ -24,7 +29,7 @@ body {
 
 .about-button {
     position: absolute;
-    top: 90vh;
+    top: 88vh;
     right: 5vw;
     z-index: 5;
     background-color: rgb(151, 121, 68);
@@ -54,7 +59,8 @@ body {
     position: absolute;
 }
 
-.description, .about {
+.description,
+.about {
     left: 50%;
     top: 0;
     position: absolute;
@@ -90,7 +96,8 @@ body {
     padding-top: 5%;
 }
 
-p,li {
+p,
+li {
     color: rgb(151, 121, 68);
     font-size: 1.5vw;
     font-family: 'Josefin Slab';
@@ -119,11 +126,30 @@ p,li {
 
 .button:hover {
     background-color: #aaa28200;
-    border: 2px solid rgb(191 153 87);
+    border: 3px solid rgb(191 153 87);
+    animation-name: stretch;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(1.0);
+        border-radius: 100%;
+    }
+    50% {
+        background-color: rgb(191 153 87);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 #louvre {
-    top: 61vh;
+    top: 60.6vh;
     left: 2.1vw;
 }
 
@@ -133,6 +159,6 @@ p,li {
 }
 
 #manarat {
-    top: 55vh;
+    top: 55.1vh;
     left: 16.3vw;
 }

@@ -1,15 +1,23 @@
- let overlay;
+let overlay;
 
- window.addEventListener("load", () => {
-     overlay = document.getElementById("overlay");
-     overlay.style.display = "none";
- })
+window.addEventListener("load", () => {
+    overlay = document.getElementById("overlay");
+    overlay.style.display = "none";
 
-function goHome(){
+    document.getElementById('overlay').onclick = function (e) {
+        if (e.target != document.getElementById('card') && e.target != document.getElementById('art-image')) {
+            back();
+        } else {
+            console.log('You clicked inside');
+        }
+    }
+})
+
+function goHome() {
     window.location = '/index.html';
 }
 
-function display(piece){
+function display(piece) {
     overlay.style.display = "block";
     let image = document.getElementById("art-image");
     image.className = piece;
@@ -17,7 +25,6 @@ function display(piece){
     console.log(piece);
 }
 
-
-function back(){
+function back() {
     overlay.style.display = "none";
 }

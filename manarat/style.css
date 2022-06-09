@@ -103,7 +103,7 @@ h2 {
 }
 
 #outside-in {
-    left: 38.8vw;
+    left: 38.85vw;
     width: 22.1vw;
     height: 16.5vh;
     top: 36.5vh;
@@ -148,7 +148,7 @@ h2 {
 }
 
 #boy:hover {
-    background-color: rgb(18 0 231);
+    background-color: rgb(28, 13, 201);
 }
 
 #girl {
@@ -160,7 +160,7 @@ h2 {
 }
 
 #girl:hover {
-    background-color: #d08cc6;
+    background-color: #e2a5d9;
 }
 
 #overlay {
