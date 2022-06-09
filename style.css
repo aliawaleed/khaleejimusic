@@ -20,6 +20,7 @@ body {
 
 .about {
     display: none;
+    padding-right: 3%;
 }
 
 .about-button {
