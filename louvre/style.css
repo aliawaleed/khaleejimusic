@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
 html,
 body {
@@ -10,7 +10,7 @@ body {
 */
     font-size: 2vw;
     color: #938a6a;
-    font-family: "Bebas Neue";
+    font-family: "Josefin Slab";
 }
 
 .background-container {

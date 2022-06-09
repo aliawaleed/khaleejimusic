@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
 html,
 body {
@@ -13,8 +13,8 @@ body {
 
 h2 {
     text-align: center;
-    font-size: 2.5vw;
-    font-family: "Fjalla One";
+    font-size: 2.7vw;
+    font-family: "Josefin Slab";
 }
 
 .background-container {
@@ -197,6 +197,7 @@ img {
     right: 0.5vw;
     font-size: 2vw;
     margin: 0;
+    font-family: "Josefin Slab";
 }
 
 #instructions{
