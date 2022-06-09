@@ -30,7 +30,7 @@ body {
 }
 
 h2 {
-  color: antiquewhite;
+  color: #F6F5F3;
   text-align: center;
   padding-bottom: 1%;
   font-size: 3vw;
@@ -53,7 +53,7 @@ h2 {
 .audio-container {
   background-color: #000;
   border-radius: 15px;
-  box-shadow: 0 20px 20px 0 #e9dbc36d;
+  box-shadow: 0 20px 20px 0 #f6f5f360;
   display: flex;
   padding: 25px 40px;
   position: relative;
@@ -103,7 +103,7 @@ h2 {
 .action-btn {
   background-color: #000;
   border: 0;
-  color: #e9dbc3;
+  color: #F6F5F3;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
@@ -112,7 +112,7 @@ h2 {
 
 
 .action-btn.action-btn-big {
-  color: #e9dbc3;
+  color: #F6F5F3;
   font-size: 30px;
 }
 
@@ -121,7 +121,7 @@ h2 {
 }
 
 .audio-info {
-  background-color: #e9dbc3;
+  background-color: #F6F5F3;
   border-radius: 15px 15px 0 0;
   position: absolute;
   top: 0;
@@ -144,7 +144,7 @@ h2 {
 }
 
 .progress-container {
-  background: #fff;
+  background: #F6F5F3;
   border-radius: 5px;
   cursor: pointer;
   margin: 10px 0;
