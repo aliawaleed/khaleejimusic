@@ -60,25 +60,24 @@ h2{
 /*    position: relative;*/
     align-content: center;
 /*    padding: 6%;*/
-    padding-top: %;
 }
 
 
 
-#overplow{
+/* #overplow{ */
 /*    position: absolute;*/
 /*    transform: translateX(0%);*/
-}
+/* } */
 
 
-#overplow:hover{
+/* #overplow:hover{ */
 /*    background-color: #aaa28200;*/
 /*    border: 1px solid bisque;*/
 /*    padding: 3vw;*/
 /*    transform: scale(1.2);*/
 /*    z-index: 1000;*/
 
-}
+/* } */
 
 
 

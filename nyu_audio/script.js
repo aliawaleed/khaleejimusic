@@ -15,11 +15,10 @@ let audioDescriptions = ["Introducing claps to the rhythm", "Using the hawan for
 
 
 // Keep track of song
-let songIndex = 1;
+let songIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
-
 
 
 // Update song details
@@ -124,4 +123,11 @@ function goHome(){
 
 function goNYU(){
     window.location = '/nyu/index.html';
+}
+
+function reply_click(disk){
+  songIndex = disk;
+  loadSong(songs[songIndex]);
+  playSong();
+  // console.log(disk)
 }
