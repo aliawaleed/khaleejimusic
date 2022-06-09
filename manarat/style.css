@@ -36,15 +36,10 @@ h2 {
 .artwork {
     position: absolute;
     background-color: #ffffff00;
-    /* border-radius: 5%; */
     cursor: pointer;
     box-sizing: border-box;
     padding: 1%;
     text-align: center;
-}
-
-.artwork:hover {
-    background-color: #cce4ea;
 }
 
 #vaadakaTwo {
@@ -55,12 +50,20 @@ h2 {
     padding-top: 2.5%;
 }
 
+#vaadakaTwo:hover {
+    background-color: rgb(99 61 41);
+}
+
 #vaadaka {
     width: 20vw;
     height: 17.8vh;
     left: 15.1vw;
     top: 30.6vh;
     padding-top: 3.7%;
+}
+
+#vaadaka:hover {
+    background-color: rgb(17 33 104);
 }
 
 #fwalat {
@@ -71,12 +74,20 @@ h2 {
     padding-top: 3%;
 }
 
+#fwalat:hover {
+    background-color: rgb(174 146 122);
+}
+
 #past-voices {
     left: 15.1vw;
     width: 20vw;
     height: 16.6vh;
     top: 77.2vh;
     padding-top: 3%;
+}
+
+#past-voices:hover {
+    background-color: rgb(106, 17, 158);
 }
 
 #dish {
@@ -87,12 +98,20 @@ h2 {
     padding-top: 3%;
 }
 
+#dish:hover {
+    background-color: rgb(0 13 39);
+}
+
 #outside-in {
-    left: 38.9vw;
-    width: 22vw;
-    height: 16.4vh;
+    left: 38.8vw;
+    width: 22.1vw;
+    height: 16.5vh;
     top: 36.5vh;
     padding-top: 3%;
+}
+
+#outside-in:hover {
+    background-color: rgb(196 188 175);
 }
 
 #volcano {
@@ -104,12 +123,20 @@ h2 {
     padding-top: 8%;
 }
 
+#volcano:hover {
+    background-color: rgb(244, 217, 216);
+}
+
 #hauntology {
     width: 19.7vw;
     height: 36.3vh;
     right: 15.3vw;
     top: 14.2vh;
     padding-top: 7%;
+}
+
+#hauntology:hover {
+    background-color: rgb(92 94 84);
 }
 
 #boy {
@@ -120,12 +147,20 @@ h2 {
     padding-top: 3%;
 }
 
+#boy:hover {
+    background-color: rgb(18 0 231);
+}
+
 #girl {
     width: 20vw;
     height: 16.4vh;
     right: 15.1vw;
     top: 77.3vh;
     padding-top: 3%;
+}
+
+#girl:hover {
+    background-color: #d08cc6;
 }
 
 #overlay {

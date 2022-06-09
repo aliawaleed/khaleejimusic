@@ -11,10 +11,10 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
-  position:fixed;
+  position: fixed;
 }
 
-h2{
+h2 {
   color: antiquewhite;
   text-align: center;
   padding-bottom: 1%;
@@ -23,11 +23,33 @@ h2{
   font-family: 'Fjalla One';
 }
 
+.icons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#vid-icon {
+  padding-top: 23%;
+}
+
+#img-icon {
+  padding-top: 16%;
+}
+
+#aud-icon {
+  padding-top: 18%;
+}
+
+.titles {
+  text-align: center;
+  font-family: 'Fjalla One';
+  font-size: 2.5vw;
+}
+
 video {
   width: 55vw;
-  padding: 0.5vh;
-  background-color: antiquewhite;
-  border-radius: 1%;
 }
 
 #overlay {
@@ -35,7 +57,7 @@ video {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  position:fixed;
+  position: fixed;
   top: 0;
 }
 
@@ -73,7 +95,7 @@ video {
   left: 1vw;
   cursor: pointer;
   z-index: 3;
-  position:fixed;
+  position: fixed;
 }
 
 .videos,
@@ -238,14 +260,6 @@ div.desc {
   left: 6vw;
 }
 
-.icons {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30%;
-  width: 40%;
-}
-
-.audios{
+.audios {
   left: 10vw;
 }

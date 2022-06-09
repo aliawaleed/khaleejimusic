@@ -17,9 +17,18 @@
     <div id="overlay"></div>
 
     <div class="main">
-        <div class="section" id="videos" onclick="viewVideos();"> <img src="/nyu/images/vid-icon.png" class="icons"> </div>
-        <div class="section" id="images" onclick="viewImages();"> <img src="/nyu/images/img-icon.png" class="icons"> </div>
-        <div class="section" id="audios" onclick="goaudio();"> <img src="/nyu/images/aud-icon.png" class="icons"></div>
+        <div class="section" id="videos" onclick="viewVideos();">
+            <img src="/nyu/images/vid-icon.png" class="icons" id="vid-icon">
+            <p class="titles"> Videos</p>
+        </div>
+        <div class="section" id="images" onclick="viewImages();">
+            <img src="/nyu/images/img-icon.png" class="icons" id="img-icon"> 
+            <p class="titles"> Images </p>
+        </div>
+        <div class="section" id="audios" onclick="goaudio();">
+            <img src="/nyu/images/aud-icon.png" class="icons" id="aud-icon">
+            <p class="titles"> Audios </p>
+        </div>
     </div>
 
     <img src="/images/back.png" alt="back button" class="back" id="back-categories" onclick="backToMain()">
