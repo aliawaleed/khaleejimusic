@@ -11,6 +11,7 @@ const cover = document.getElementById('cover');
 
 // Song titles
 const songs = ['claps','cling','conclusion','discussion','playing','playingAgain','tightening','workshop'];
+let audioDescriptions = ["Introducing claps to the rhythm", "Using the hawan for the first time", "How to conclude", "Discussion", "Playing the Mukhalaf rhythm", "Singing along the Hasawi rhythm", "How often Tabels are tightened", "Introducing the workshop"];
 
 // Keep track of song
 let songIndex = 1;
@@ -20,7 +21,7 @@ loadSong(songs[songIndex]);
 
 // Update song details
 function loadSong(song) {
-  title.innerText = song;
+  title.innerText = audioDescriptions[songIndex];
   audio.src = `music/${song}.wav`;
   cover.src = `images/${song}.jpg`;
 }

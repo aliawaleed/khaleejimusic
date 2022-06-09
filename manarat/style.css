@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 html,
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(246, 245, 243);
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: #938a6a;
     font-family: "Bebas Neue";
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: "Fjalla One";
 }
 
 .background-container {
     height: 80vh;
     width: 70vw;
-    top: 10vh;
+    top: 14vh;
     left: 15vw;
     position: absolute;
 }
@@ -44,7 +51,7 @@ body {
     width: 20vw;
     height: 15.4vh;
     left: 15.1vw;
-    top: 10.2vh;
+    top: 14.2vh;
     padding-top: 2.5%;
 }
 
@@ -52,7 +59,7 @@ body {
     width: 20vw;
     height: 17.8vh;
     left: 15.1vw;
-    top: 26.6vh;
+    top: 30.6vh;
     padding-top: 3.7%;
 }
 
@@ -60,7 +67,7 @@ body {
     left: 15.2vw;
     width: 20vw;
     height: 16.4vh;
-    top: 51.2vh;
+    top: 55.2vh;
     padding-top: 3%;
 }
 
@@ -68,7 +75,7 @@ body {
     left: 15.1vw;
     width: 20vw;
     height: 16.6vh;
-    top: 73.2vh;
+    top: 77.2vh;
     padding-top: 3%;
 }
 
@@ -76,7 +83,7 @@ body {
     left: 38.9vw;
     width: 22vw;
     height: 16.4vh;
-    top: 10.2vh;
+    top: 14.2vh;
     padding-top: 3%;
 }
 
@@ -84,15 +91,15 @@ body {
     left: 38.9vw;
     width: 22vw;
     height: 16.4vh;
-    top: 32.5vh;
+    top: 36.5vh;
     padding-top: 3%;
 }
 
 #volcano {
-    left: 38.9vw;
-    width: 22.2vw;
+    left: 38.8vw;
+    width: 22.4vw;
     height: 36vh;
-    top: 53.8vh;
+    top: 57.8vh;
     border-radius: 50%;
     padding-top: 8%;
 }
@@ -101,15 +108,15 @@ body {
     width: 19.7vw;
     height: 36.3vh;
     right: 15.3vw;
-    top: 10.2vh;
-    padding-top: 8%;
+    top: 14.2vh;
+    padding-top: 7%;
 }
 
 #boy {
     width: 20vw;
     height: 16.4vh;
     right: 15.1vw;
-    top: 51.3vh;
+    top: 55.3vh;
     padding-top: 3%;
 }
 
@@ -117,7 +124,7 @@ body {
     width: 20vw;
     height: 16.4vh;
     right: 15.1vw;
-    top: 73.3vh;
+    top: 77.3vh;
     padding-top: 3%;
 }
 
@@ -126,6 +133,7 @@ body {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
+    top: 0;
     display: none;
 }
 
@@ -133,8 +141,8 @@ body {
     background-color: rgb(226, 226, 212);
     top: 10vh;
     height: 80vh;
-    left: 33vw;
-    width: 34vw;
+    left: 35vw;
+    width: 30vw;
     position: absolute;
     box-sizing: border-box;
     padding: 1%;
@@ -151,7 +159,7 @@ img {
     position: absolute;
     cursor: pointer;
     top: 0vh;
-    right: 1vw;
+    right: 0.5vw;
     font-size: 2vw;
     margin: 0;
 }

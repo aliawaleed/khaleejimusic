@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 html,
 body {
   margin: 0;
@@ -12,8 +14,20 @@ body {
   position:fixed;
 }
 
+h2{
+  color: antiquewhite;
+  text-align: center;
+  padding-bottom: 1%;
+  font-size: 3vw;
+  margin-top: 0;
+  font-family: 'Fjalla One';
+}
+
 video {
-  width: 60vw;
+  width: 55vw;
+  padding: 0.5vh;
+  background-color: antiquewhite;
+  border-radius: 1%;
 }
 
 #overlay {
@@ -64,8 +78,8 @@ video {
 
 .videos,
 .audios {
-  top: 15%;
-  left: 20%;
+  top: 7vh;
+  left: 25%;
   z-index: 1;
   position: absolute;
 }
@@ -200,7 +214,7 @@ div.desc {
 }
 
 .responsive:hover {
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 
 @media only screen and (max-width: 900px) {
@@ -217,7 +231,7 @@ div.desc {
 }
 
 .images {
-  top: 10vh;
+  top: 7vh;
   position: absolute;
   width: 90vw;
   height: 90vh;
