@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 html,
 body {
@@ -97,9 +96,6 @@ body {
     font-family: 'Josefin Slab';
     padding-top: 5%;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 
 p,
 li {
