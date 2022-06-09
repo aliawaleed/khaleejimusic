@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
 *{
     box-sizing: border-box;
@@ -31,15 +31,28 @@ body{
 }
 
 h2{
-  color: antiquewhite;
+  color: #F6F5F3;
   text-align: center;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
   font-size: 3vw;
   margin-top: 0;
-  font-family: 'Fjalla One';
+  font-family: 'Josefin Slab';
   z-index: 5;
   position: absolute;
   top: 10vh;
+}
+
+#album img {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 12vw;
+  height: 20vh;
+  padding-top: 3%;
+  /* background-color: #F6F5F3; */
+}
+
+#album img:hover {
+  transform: scale(1.2);
 }
 
 #overlay {
@@ -59,7 +72,6 @@ h2{
     grid-template-columns: repeat(4);
 /*    position: relative;*/
     align-content: center;
-/*    padding: 6%;*/
 }
 
 
@@ -77,14 +89,14 @@ h2{
 /*    transform: scale(1.2);*/
 /*    z-index: 1000;*/
 
-/* } */
+/*  */
 
 
 
 .audio-container{
     background-color: #000;
     border-radius: 15px;
-    box-shadow: 0 20px 20px 0 #e9dbc36d;
+    box-shadow: 0 20px 20px 0 #f6f5f368;
     display: flex;
     padding: 25px 40px;
     position: relative;
@@ -134,7 +146,7 @@ h2{
   .action-btn {
     background-color: #000;
     border: 0;
-    color: #e9dbc3;
+    color: #F6F5F3;
     font-size: 20px;
     cursor: pointer;
     padding: 10px;
@@ -143,7 +155,7 @@ h2{
 
 
   .action-btn.action-btn-big {
-    color: #e9dbc3;
+    color: #F6F5F3;
     font-size: 30px;
   }
 
@@ -152,7 +164,7 @@ h2{
   }
 
   .audio-info {
-    background-color: #e9dbc3;
+    background-color: #F6F5F3;
     border-radius: 15px 15px 0 0;
     position: absolute;
     top: 0;
@@ -175,7 +187,7 @@ h2{
   }
   
   .progress-container {
-    background: #fff;
+    background: #ffffff;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;

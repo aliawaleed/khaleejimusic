@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 html,
 body {
@@ -44,7 +45,7 @@ h2 {
 
 .titles {
   text-align: center;
-  font-family: "Josefin Slab";
+  font-family: "Bebas Neue";
   font-size: 2.5vw;
 }
 
