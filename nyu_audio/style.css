@@ -29,11 +29,20 @@ body{
   position:fixed;
 }
 
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  position:fixed;
+  top: 0;
+}
+
 
 .audio-container{
     background-color: #000;
     border-radius: 15px;
-    box-shadow: 0 20px 20px 0 rgba(247, 148, 0.5,0.5);
+    box-shadow: 0 20px 20px 0 rgba(247, 148, 0.5,0.3);
     display: flex;
     padding: 20px 30px;
     position: relative;

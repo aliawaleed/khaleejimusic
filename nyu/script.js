@@ -146,3 +146,7 @@ function showSlides(n) {
 function goHome() {
     window.location = '/index.html';
 }
+
+function goaudio() {
+    window.location = '/nyu_audio/index.html';
+}

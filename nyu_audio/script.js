@@ -112,3 +112,7 @@ audio.addEventListener('ended', nextSong);
 function goHome(){
     window.location = '/index.html';
 }
+
+function goNYU(){
+    window.location = '/nyu/index.html';
+}

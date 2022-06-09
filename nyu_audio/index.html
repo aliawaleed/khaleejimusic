@@ -11,21 +11,22 @@
 
 <body>
     
-    <img src="/images/back.png" alt="back button" class="back" id="back-button" onclick="goHome()">
+    <img src="/images/back.png" alt="back button" class="back" id="back-button" onclick="goNYU()">
     
     <img class="background-container">
     
-    <h1>Audios</h1>
+    <div id="overlay"></div>
+        
     <div class="audio-container" id="audio-container">
         <div class="audio-info">
-            <h4 id="title">Melody</h4>
+            <h4 id="title">Clap</h4>
             <div class="progress-container" id="progress-container">
                 <div class="progress" id="progress"></div>
             </div>
         </div>
-        <audio src="music/melody.mp3" id="audio"></audio>
+        <audio src="music/claps.wav" id="audio"></audio>
         <div class="img-container">
-            <img src="images/melody.jpg" alt="music-cover" id="cover">
+            <img src="images/claps.jpg" alt="music-cover" id="cover">
         </div>
         <div class="navigation">
             <button id="prev" class="action-btn">
