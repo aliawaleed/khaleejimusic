@@ -7,9 +7,11 @@ let main;
 let back;
 let over;
 let videoPaths = ['/nyu/videos/vid1.mp4', '/nyu/videos/vid4.mp4', '/nyu/videos/vid5.mp4', '/nyu/videos/vid6.mp4', '/nyu/videos/vid7.mp4', '/nyu/videos/vid8.mp4', '/nyu/videos/vid9.mp4', '/nyu/videos/vid10.mp4', '/nyu/videos/vid11.mp4', '/nyu/videos/vid13.mp4', '/nyu/videos/vid14.mp4', '/nyu/videos/vid15.mp4', '/nyu/videos/vid16.mp4', '/nyu/videos/vid17.mp4', '/nyu/videos/vid18.mp4', '/nyu/videos/vid19.mp4', '/nyu/videos/vid20.mp4', '/nyu/videos/vid21.mp4', '/nyu/videos/vid22.mp4', '/nyu/videos/vid23.mp4', '/nyu/videos/vid24.mp4', '/nyu/videos/vid25.mp4', '/nyu/videos/vid26.mp4', '/nyu/videos/vid27.mp4', '/nyu/videos/vid28.mp4', '/nyu/videos/vid30.mp4'];
-let imagePaths = ['/nyu/images/image1.png', '/nyu/images/image2.png', '/nyu/images/image3.png', '/nyu/images/image4.png', '/nyu/images/image5.png', '/nyu/images/image6.png', '/nyu/images/image7.png', '/nyu/images/image8.png', '/nyu/images/image9.png', '/nyu/images/image10.png', '/nyu/images/image11.png', '/nyu/images/image12.png', '/nyu/images/image13.png', '/nyu/images/image23.png', '/nyu/images/image14.png', '/nyu/images/image15.png', '/nyu/images/image16.png', '/nyu/images/image17.png', '/nyu/images/image18.png', '/nyu/images/image19.png', '/nyu/images/image20.png', '/nyu/images/image21.png', '/nyu/images/image22.png', '/nyu/images/image24.png'];
+let imagePaths = ['/nyu/images/image1.png', '/nyu/images/image23.png', '/nyu/images/image14.png', '/nyu/images/image3.png', '/nyu/images/image21.png','/nyu/images/image18.png','/nyu/images/image2.png', '/nyu/images/image4.png', '/nyu/images/image5.png', '/nyu/images/image6.png', '/nyu/images/image7.png', '/nyu/images/image8.png', '/nyu/images/image9.png', '/nyu/images/image10.png', '/nyu/images/image11.png', '/nyu/images/image12.png', '/nyu/images/image13.png', '/nyu/images/image15.png', '/nyu/images/image16.png', '/nyu/images/image17.png', '/nyu/images/image19.png', '/nyu/images/image20.png', '/nyu/images/image22.png', '/nyu/images/image24.png'];
 let audioPaths = ['/nyu/audios/claps.wav', '/nyu/audios/cling.wav', '/nyu/audios/conclusion.wav', '/nyu/audios/discussion.wav', '/nyu/audios/playing.wav', '/nyu/audios/playingAgain.wav', '/nyu/audios/tightening.wav', '/nyu/audios/workshop.wav'];
 let audioDescriptions = ["Introducing claps to the rhythm", "Using the hawan for the first time", "How to conclude", "Discussion", "Playing the Mukhalaf rhythm", "Singing along with the Hasawi rhythm", "Response on how often the merwas is tightened", "Introducing the workshop"];
+let imgDescriptions = ["Majlis setup", "The Tabel", "The Manjur", "Members of Boom.Diwan", "Tightening the Merwas", "Playing the Yahalas","Hamad playing the Tabel",  "Incorporating dance", "Clapping along the rhythm", "Playing with Boom.Diwan", "The Hawan and Tabel", "----", "Marawees and Yahalas", "-----", "Final Recital", "Final Recital closer", "----", "Marawees with guests", "Daby playing the piano", "Practicing", "Setting up the Manjur", "Tabel, Hawan, Merwas, Yahala", "Tightening the tabel", "Incorporating electric guitar"];
+let vidDescriptions = ["---", "Practicing Hasawi with Professor Ghazi using Merwas, Yahala and Tabel.", "Practicing Hasawi with Hamad Alsaeed using Merwas, Yahala and Tabel.", "Closeup on the musical instruments - Merwas in the front, Tabel on the left, Yahala on the right"]
 
 window.addEventListener("load", () => {
     main = document.getElementsByClassName('main')[0];
@@ -34,6 +36,10 @@ window.addEventListener("load", () => {
         video.setAttribute("controls", "controls")
         video.appendChild(source);
         createSlide.appendChild(video);
+        let text = document.createElement('div');
+        text.classList.add("text");
+        text.innerHTML = vidDescriptions[i];
+        createSlide.appendChild(text);
     }
 
     let dots = document.getElementsByClassName('dots')[0];
@@ -61,6 +67,7 @@ window.addEventListener("load", () => {
         imagesGallery.appendChild(image);
         let text = document.createElement('div');
         text.classList.add('desc');
+        text.textContent = imgDescriptions[i];
         imagesGallery.appendChild(text);
         responsiveness.appendChild(imagesGallery);
         imagesContainer.appendChild(responsiveness);
@@ -105,6 +112,8 @@ function expand(here) {
     image.src = here.src;
     over.style.display = "block";
     let card = document.getElementById("card");
+    let descLarge = document.getElementById("descLarge");
+    descLarge.textContent = imgDescriptions[here.id];
     card.style.display = "block";
 }
 

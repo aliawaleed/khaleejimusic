@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 html,
 body {
@@ -214,12 +215,19 @@ div.gallery img {
 }
 
 div.desc {
-  padding: 15px;
+  padding: 2vh;
   text-align: center;
   background-color: #F6F5F3;
-  font-family: "Josefin Slab";
-  font-size: 18px;
-  color: #F6F5F3;
+  font-family: "Cedarville Cursive";
+  font-size: 1.5vw;
+  color: #c79661;
+}
+
+#descLarge {
+  text-align: center;
+  font-family: "Cedarville Cursive";
+  font-size: 2vw;
+  color: #c79661;
 }
 
 * {
@@ -290,4 +298,5 @@ div.desc {
   font-size: 2vw;
   margin: 0;
   font-family: "Josefin Slab";
+  color: #c79661;
 }
